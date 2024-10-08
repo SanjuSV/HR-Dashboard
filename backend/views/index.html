@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Candidate Application Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        h1 {
+            text-align: center;
+        }
+        form {
+            max-width: 600px;
+            margin: 0 auto;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        label {
+            font-weight: bold;
+            display: block;
+            margin-bottom: 5px;
+        }
+        input, select {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 20px;
+            border-radius: 4px;
+            border: 1px solid #ccc;
+        }
+        button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <h1>Candidate Application Form</h1>
+    <form action="/submit" method="POST">
+        <h2>Personal Information</h2>
+        <label for="fullName">Full Name:</label>
+        <input type="text" id="fullName" name="fullName" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="phone">Phone:</label>
+        <input type="tel" id="phone" name="phone">
+
+        <label for="address">Address:</label>
+        <input type="text" id="address" name="address">
+
+        <label for="dateOfBirth">Date of Birth:</label>
+        <input type="date" id="dateOfBirth" name="dateOfBirth">
+
+        <label for="nationality">Nationality:</label>
+        <input type="text" id="nationality" name="nationality">
+
+        <h2>Education</h2>
+        <!-- Add educational fields as needed -->
+
+        <h2>Job Application Info</h2>
+        <label for="position">Position Applied For:</label>
+        <input type="text" id="position" name="position">
+
+        <label for="expectedSalary">Expected Salary:</label>
+        <input type="number" id="expectedSalary" name="expectedSalary">
+
+        <label for="startDate">Available Start Date:</label>
+        <input type="date" id="startDate" name="startDate">
+
+        <label for="locationPreference">Location Preference:</label>
+        <input type="text" id="locationPreference" name="locationPreference">
+
+        <label for="source">How Did You Hear About Us?</label>
+        <input type="text" id="source" name="source">
+
+        <h2>Professional Details</h2>
+
+        <h2>Documents</h2>
+        <label for="resume">Resume (URL):</label>
+        <input type="url" id="resume" name="resume">
+
+        <label for="coverLetter">Cover Letter (URL):</label>
+        <input type="url" id="coverLetter" name="coverLetter">
+
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
